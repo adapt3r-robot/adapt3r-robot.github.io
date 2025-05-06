@@ -352,7 +352,8 @@
                 type="video/mp4">
       </video>
       <h2 class="subtitle has-text-centered">
-        <b>TL;DR</b> Adapt3R is a 3D perception encoder that, combined with any of a variety of IL algorithms, enables zero-shot transfer to unseen embodiments and camera viewpoints.
+        <b>TL;DR</b> Adapt3R is a 3D perception encoder that, combined with any of a variety of IL 
+        algorithms, enables zero-shot transfer to unseen embodiments and camera viewpoints.
       </h2>
    </div>
   </div>
@@ -368,18 +369,18 @@
           <h2 class="title is-3">Abstract</h2>
           <div class="content has-text-justified">
             <p>
-              Imitation learning (IL) is a compelling method for training robots to complete a wide variety of manipulation tasks. 
-              While many modern IL algorithms use RGB observations as a default, several recent works have shown that 3D scene 
-              representations lifted from calibrated RGBD cameras can be useful for completing more complicated tasks, generalizing 
-              between camera viewpoints, generalizing to new instances of objects, and learning in low-data regimes. 
-              However, these works generally either focus on 3D keyframe prediction, utilize the scene information in a way that is 
-              highly specific to one action decoder, or omit semantic information important to task success. 
-              In this work, we argue that these 3D scene representations are useful for a variety of IL algorithms, even those originally
-              designed to work with 2D inputs. To that end, we introduce Adaptive 3D Scene Representation (Adapt3R), a general-purpose 3D observation encoder. 
-              Adapt3R uses a novel architecture to synthesize data from one or more depth cameras into a single vector which can then
-              be used as conditioning for a variety of IL algorithms. 
-              We show that when combined with SOTA multitask IL algorithms, Adapt3R maintains their multitask learning capacity 
-              while enabling zero-shot transfer to novel embodiments and camera poses. 
+              Imitation Learning can train robots to perform complex and diverse manipulation tasks, but 
+              learned policies are brittle with observations outside of the training distribution. 
+              3D scene representations that incorporate observations from calibrated RGBD cameras have 
+              been proposed as a way to mitigate this, but in our evaluations with unseen embodiments 
+              and camera viewpoints they show only modest improvement. To address those challenges, 
+              we propose Adapt3R, a general-purpose 3D observation encoder which synthesizes data from 
+              calibrated RGBD cameras into a vector that can be used as conditioning for arbitrary IL 
+              algorithms. The key idea is to use a pretrained 2D backbone to extract semantic information, 
+              using 3D only as a medium to localize this information with respect to the end-effector.
+              We show across 93 simulated and 6 real tasks that when trained end-to-end with a variety of 
+              IL algorithms, Adapt3R maintains these algorithms' learning capacity while enabling zero-shot 
+              transfer to novel embodiments and camera poses. 
             </p>
           </div>
         </div>
@@ -398,7 +399,7 @@
       </video>
       <div class="content has-text-justified">
         <p>
-          Adapt3R is a unified method for extracting scene representations from RGBD 
+          Adapt3R extracts scene representations from RGBD 
           inputs for imitation learning, and is designed to work well with a variety 
           of state-of-the-art imitation learning algorithms. It starts by lifting 
           pre-trained foundation model features on RGBD inputs into a 3D scene representation. 
