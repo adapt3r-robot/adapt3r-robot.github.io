@@ -369,18 +369,18 @@
           <h2 class="title is-3">Abstract</h2>
           <div class="content has-text-justified">
             <p>
-              Imitation Learning can train robots to perform complex and diverse manipulation tasks, but 
-              learned policies are brittle with observations outside of the training distribution. 
+              Imitation Learning can train robots to perform complex and diverse manipulation tasks, 
+              but learned policies are brittle with observations outside of the training distribution. 
               3D scene representations that incorporate observations from calibrated RGBD cameras have 
               been proposed as a way to mitigate this, but in our evaluations with unseen embodiments 
-              and camera viewpoints they show only modest improvement. To address those challenges, 
-              we propose Adapt3R, a general-purpose 3D observation encoder which synthesizes data from 
-              calibrated RGBD cameras into a vector that can be used as conditioning for arbitrary IL 
-              algorithms. The key idea is to use a pretrained 2D backbone to extract semantic information, 
-              using 3D only as a medium to localize this information with respect to the end-effector.
-              We show across 93 simulated and 6 real tasks that when trained end-to-end with a variety of 
-              IL algorithms, Adapt3R maintains these algorithms' learning capacity while enabling zero-shot 
-              transfer to novel embodiments and camera poses. 
+              and camera viewpoints they show only modest improvement. To address those challenges, we 
+              propose Adapt3R, a general-purpose 3D observation encoder which synthesizes data from calibrated 
+              RGBD cameras into a vector that can be used as conditioning for arbitrary IL algorithms. 
+              The key idea is to use a pretrained 2D backbone to extract semantic information, using 3D 
+              only as a medium to localize this information with respect to the end-effector. We show 
+              across 93 simulated and 6 real tasks that when trained end-to-end with a variety of IL 
+              algorithms, Adapt3R maintains these algorithms' learning capacity while enabling zero-shot 
+              transfer to novel embodiments and camera poses.
             </p>
           </div>
         </div>
