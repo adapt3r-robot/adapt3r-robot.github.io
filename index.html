@@ -517,26 +517,52 @@
     <div class="container">
       <h2 class="title is-3">Attention Maps</h2>
       <h2 class="subtitle">
-        We visualize attention maps from our attention pooling operation.
+        We visualize attention maps from our attention pooling operation. In the training distribution, we see that Adapt3R mainly attends to the task-relevant objects.
       </h2>
       <div class="iframe-row">
         <div class="iframe-container">
           <iframe class="vframe"
-                  src="https://adapt3r-robot.github.io/viser-client?playbackPath=https://adapt3r-robot.github.io/recordings/threading.viser&initialCameraPosition=0.749,-0.078,1.134&initialCameraLookAt=-0.411,-0.100,0.360&initialCameraUp=0.000,0.000,1.000"
+                  src="https://adapt3r-robot.github.io/viser-client?playbackPath=https://adapt3r-robot.github.io/recordings/threading-orig.viser&initialCameraPosition=0.749,-0.078,1.134&initialCameraLookAt=-0.411,-0.100,0.360&initialCameraUp=0.000,0.000,1.000"
                   loading="lazy"></iframe>
-          <button onclick="openInNewTab(this)" data-link="https://adapt3r-robot.github.io/viser-client?playbackPath=https://adapt3r-robot.github.io/recordings/threading.viser&initialCameraPosition=0.749,-0.078,1.134&initialCameraLookAt=-0.411,-0.100,0.360&initialCameraUp=0.000,0.000,1.000">Open in New Tab for Better Visualization</button>
+                  <button onclick="openInNewTab(this)" data-link="https://adapt3r-robot.github.io/viser-client?playbackPath=https://adapt3r-robot.github.io/recordings/threading-orig.viser&initialCameraPosition=0.749,-0.078,1.134&initialCameraLookAt=-0.411,-0.100,0.360&initialCameraUp=0.000,0.000,1.000">Open in New Tab for Better Visualization</button>
+                </div>
+        <div class="iframe-container">
+          <iframe class="vframe"
+          src="https://adapt3r-robot.github.io/viser-client?playbackPath=https://adapt3r-robot.github.io/recordings/square-orig.viser&initialCameraPosition=0.749,-0.078,1.134&initialCameraLookAt=-0.411,-0.100,0.360&initialCameraUp=0.000,0.000,1.000"
+          loading="lazy"></iframe>
+          <button onclick="openInNewTab(this)" data-link="https://adapt3r-robot.github.io/viser-client?playbackPath=https://adapt3r-robot.github.io/recordings/square-orig.viser&initialCameraPosition=0.749,-0.078,1.134&initialCameraLookAt=-0.411,-0.100,0.360&initialCameraUp=0.000,0.000,1.000">Open in New Tab for Better Visualization</button>
         </div>
         <div class="iframe-container">
           <iframe class="vframe"
-                  src="https://adapt3r-robot.github.io/viser-client?playbackPath=https://adapt3r-robot.github.io/recordings/square.viser&initialCameraPosition=0.749,-0.078,1.134&initialCameraLookAt=-0.411,-0.100,0.360&initialCameraUp=0.000,0.000,1.000"
+          src="https://adapt3r-robot.github.io/viser-client?playbackPath=https://adapt3r-robot.github.io/recordings/coffee-orig.viser&initialCameraPosition=0.749,-0.078,1.134&initialCameraLookAt=-0.411,-0.100,0.360&initialCameraUp=0.000,0.000,1.000"
+          loading="lazy"></iframe>
+          <button onclick="openInNewTab(this)" data-link="https://adapt3r-robot.github.io/viser-client?playbackPath=https://adapt3r-robot.github.io/recordings/coffee-orig.viser&initialCameraPosition=0.749,-0.078,1.134&initialCameraLookAt=-0.411,-0.100,0.360&initialCameraUp=0.000,0.000,1.000">Open in New Tab for Better Visualization</button>
+        </div>
+      </div>
+      <hr>
+      <hr>
+      <h2 class="title is-4">Attention Maps with Unseen Camera View</h2>
+      <h2 class="subtitle">
+        Now, after we move the camera to an unseen viewpoint, we see that Adapt3R attends to the same task-relevant objects, helping to minimize the domain gap.
+      </h2>
+      <div class="iframe-row">
+        <div class="iframe-container">
+          <iframe class="vframe"
+                  src="https://adapt3r-robot.github.io/viser-client?playbackPath=https://adapt3r-robot.github.io/recordings/threading-change.viser&initialCameraPosition=0.749,-0.078,1.134&initialCameraLookAt=-0.411,-0.100,0.360&initialCameraUp=0.000,0.000,1.000"
                   loading="lazy"></iframe>
-          <button onclick="openInNewTab(this)" data-link="https://adapt3r-robot.github.io/viser-client?playbackPath=https://adapt3r-robot.github.io/recordings/square.viser&initialCameraPosition=0.749,-0.078,1.134&initialCameraLookAt=-0.411,-0.100,0.360&initialCameraUp=0.000,0.000,1.000">Open in New Tab for Better Visualization</button>
+          <button onclick="openInNewTab(this)" data-link="https://adapt3r-robot.github.io/viser-client?playbackPath=https://adapt3r-robot.github.io/recordings/threading-change.viser&initialCameraPosition=0.749,-0.078,1.134&initialCameraLookAt=-0.411,-0.100,0.360&initialCameraUp=0.000,0.000,1.000">Open in New Tab for Better Visualization</button>
         </div>
         <div class="iframe-container">
           <iframe class="vframe"
-                  src="https://adapt3r-robot.github.io/viser-client?playbackPath=https://adapt3r-robot.github.io/recordings/coffee.viser&initialCameraPosition=0.749,-0.078,1.134&initialCameraLookAt=-0.411,-0.100,0.360&initialCameraUp=0.000,0.000,1.000"
+                  src="https://adapt3r-robot.github.io/viser-client?playbackPath=https://adapt3r-robot.github.io/recordings/square-change.viser&initialCameraPosition=0.749,-0.078,1.134&initialCameraLookAt=-0.411,-0.100,0.360&initialCameraUp=0.000,0.000,1.000"
                   loading="lazy"></iframe>
-          <button onclick="openInNewTab(this)" data-link="https://adapt3r-robot.github.io/viser-client?playbackPath=https://adapt3r-robot.github.io/recordings/coffee.viser&initialCameraPosition=0.749,-0.078,1.134&initialCameraLookAt=-0.411,-0.100,0.360&initialCameraUp=0.000,0.000,1.000">Open in New Tab for Better Visualization</button>
+          <button onclick="openInNewTab(this)" data-link="https://adapt3r-robot.github.io/viser-client?playbackPath=https://adapt3r-robot.github.io/recordings/square-change.viser&initialCameraPosition=0.749,-0.078,1.134&initialCameraLookAt=-0.411,-0.100,0.360&initialCameraUp=0.000,0.000,1.000">Open in New Tab for Better Visualization</button>
+        </div>
+        <div class="iframe-container">
+          <iframe class="vframe"
+                  src="https://adapt3r-robot.github.io/viser-client?playbackPath=https://adapt3r-robot.github.io/recordings/coffee-change.viser&initialCameraPosition=0.749,-0.078,1.134&initialCameraLookAt=-0.411,-0.100,0.360&initialCameraUp=0.000,0.000,1.000"
+                  loading="lazy"></iframe>
+          <button onclick="openInNewTab(this)" data-link="https://adapt3r-robot.github.io/viser-client?playbackPath=https://adapt3r-robot.github.io/recordings/coffee-change.viser&initialCameraPosition=0.749,-0.078,1.134&initialCameraLookAt=-0.411,-0.100,0.360&initialCameraUp=0.000,0.000,1.000">Open in New Tab for Better Visualization</button>
         </div>
       </div>
     </div>      
